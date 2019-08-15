@@ -1,0 +1,557 @@
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+* {}
+*:focus {outline: none;}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+ol, ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+		text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+img {
+	border-style:none;
+	max-width:100%;
+}
+form fieldset {
+	margin:0;
+	padding:0;
+	border:none;
+}
+input, textarea, select {
+	vertical-align:middle;
+	color:#000;
+	padding:0;
+}
+input, select {
+	vertical-align:middle;
+}
+
+/*@media*/
+
+/* @media (min-width: 1921px){} 													QHD \ UHD
+@media (min-width: 1600px) and (max-width: 1919px) {}	HD +
+@media (min-width: 1440px) and (max-width: 1599px) {}	macbook
+@media (min-width: 1360px) and (max-width: 1439px) {}	HD
+@media (min-width: 1280px) and (max-width: 1359px) {} IPAD2
+@media (min-width: 1024px) and (max-width: 1279px) {} IPAD
+@media (min-width: 896px) and (max-width: 1023px) {}	Ip Xs max horizontal
+@media (min-width: 812px) and (max-width: 895px) {}		Ip Xs horizontal
+@media (min-width: 768px) and (max-width: 811px) {}		Tablet
+@media (min-width: 736px) and (max-width: 767px) {}		Ip 6,7,8 Plus horizontal
+@media (min-width: 667px) and (max-width: 735px) {}		Ip 6,7,8 horizontal
+@media (min-width: 568px) and (max-width: 666px) {}		Ip 5 horizontal
+@media (min-width: 480px) and (max-width: 567px) {}		Ip 4 horizontal
+@media (min-width: 414px) and (max-width: 479px) {}		Ip 6,7,8
+@media (min-width: 320px) and (max-width: 413px) {}		Ip 4,5 */
+
+/*@media end*/
+
+/* wrapper */
+
+#wrapper {
+	display:block;
+	position:relative;
+	width:100%;
+	height:100%;
+	background-color: #fafafa;
+	overflow: hidden;
+}
+.layout {
+	margin:0 auto;
+	position:relative;
+	width:1000px;
+	background-color: #fff;
+	padding: 0 50px;
+}
+
+.layout-main {
+	margin:0 auto;
+	position:relative;
+	width:1000px;
+	background-color: #fff;
+	padding: 30px 50px;
+}
+
+footer {
+	display:block;
+	width:100%;
+	margin:0 0 0;
+	padding:0 0 0;
+	height: 20px;
+}
+.layout-f {
+	margin:0 auto;
+	position:relative;
+	width:1100px;
+	height: inherit;
+	background-color: #adadad;
+}
+
+main {
+	display:block;
+	width:100%;
+	position: relative;
+}
+header {
+	width:100%;
+	display:block;
+	position:relative;
+}
+
+.res {
+	padding: 20px 0 5px 0;
+	position: absolute;
+	left: 0;
+}
+
+.blue {
+	font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: #3798d5;
+    font-weight: 600;
+    line-height: 26px;
+   	border-left: 50px solid #3798d5;
+}
+
+.blue p {
+	border-left: 5px solid #636363;
+	padding-left: 10px;
+}
+
+.info {
+	display: flex;
+    position: relative;
+    top: 50px;
+    height: 300px;
+}
+
+.left {
+	display: block;
+	position: relative;
+	width: 60%;
+	height: 150px;
+    top: 25%;
+}
+
+.right {
+	padding-right: 20px;
+	display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.contacts {
+	margin-left: 15px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts li {
+	padding: 10px 0;
+}
+
+.contacts span, .first {
+	text-transform: capitalize;
+    color: #3798d5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    padding-bottom:5px;
+}
+
+.contacts p, .second, .third {
+    color: #636363;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.contacts li:first-child a, .contacts li:last-child a {
+	position: absolute;
+	height: 45px;
+	width: 90px;
+}
+
+.contacts li:last-child a {
+	width: 160px;
+}
+
+.name {
+	font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-size: 60px;
+    letter-spacing: -2px;
+    font-weight: 600;
+    top: 25%;
+    line-height: 85px;
+}
+
+.name p {
+	color: #53a0da;
+}
+
+.name span {
+	margin-left: 15px;
+	color: #636363;
+}
+
+.grey {
+	color: #afafaf;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-size: 24px;
+    text-align: right;
+}
+
+figcaption {
+	line-height: 26px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #fff;
+    background-color: #616161;
+    border-bottom: 2px ridge #c3c3c3;
+}
+
+.foto {
+	height: 226px;
+    box-shadow: 1px 2px 1px 2px #c3c3c3;
+    border: 2px ridge #b6b6b6;
+}
+
+#sidebar {
+	float: right;
+    width: 25%;
+    height: 400px;
+}
+
+#content {
+	position: relative;
+    width: 70%;
+}
+
+h2, h1 {
+	position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: #636363;
+    font-weight: 600;
+    line-height: 26px;
+    border-bottom: 3px solid #53a0da;
+    width: max-content;
+    bottom: -3px;
+}
+
+h3 {
+	padding-bottom: 5px;
+}
+
+.svg {
+	margin-bottom: 10px;
+}
+
+.course1 {
+    border-top: 3px solid #e8e6e7;
+}
+
+.course1, .course2 {
+	padding: 20px 0;
+}
+
+.year {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color :#fff;
+	float: left;
+    width: 80px;
+    height: 80px;
+    background: #3798d5;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.education {
+	padding: 0 0 20px 0;
+}
+
+.education a {
+	position: absolute;
+    height: 100px;
+    width: 250px;
+}
+
+.course2 a {
+    width: 200px;
+}
+
+.course2 .year {
+	background: #afafaf;
+}
+
+.txt {
+	padding: 0 20px;
+}
+
+.second {    
+	text-transform: capitalize;
+}
+
+.third {
+	margin-top: 10px;
+	color: #afafaf;
+}
+
+.course2 .third {
+	color: red;
+    text-transform: capitalize;
+}
+
+h1 {
+	border-style: none;
+	color: #fff;
+	background-color: #3798d5;
+	padding: 0 20px;
+	margin: 25px 0 0 0;
+}
+
+.circles {
+	padding: 25px 10px;
+    border-left: 2px solid #e8e6e7;
+    height: 100vh;
+}
+
+.circles li {
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #636363;
+    font-weight: 600;
+    line-height: 26px;
+    width: max-content;
+}
+
+.circles li:nth-child(3), .circles li:nth-child(5) {
+	text-transform: capitalize;
+}
+
+.text-about {
+	border-top: 3px solid #e8e6e7;
+    padding: 30px 10px 30px 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #878586;
+}
+
+.say-yes {
+	clear: right;
+}
+
+.say-yes li p:before {
+	content: "☑️";
+    padding: 0 10px 0 5px;
+}
+
+.arg {
+	color: #636363;
+	text-shadow: 0 1px 1px grey;
+}
+
+.text-about p {
+	padding: 0 10px 20px 0;
+    line-height: 1.3em;
+}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		.layout, .layout-main, .layout-f {
+			width: 100vw;
+			padding: 0 10px;
+		}
+		.info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			height: auto;
+			top: 5px;
+		}
+
+		.left {
+			width: 90%;
+			top: 60px;
+			height: auto;
+		}
+	
+		.right {
+			position: relative;
+			top: 90px;
+			width: 90%;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.name {
+			font-size: 40px;
+			line-height: 50px;
+		}
+		.name p {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+	}
+
+		.grey {
+			text-align: center;
+		}
+
+		.contacts {
+			height: 200px;
+		    flex-direction: row;
+		    width: 100%;
+		    justify-content: space-between;
+		    align-items: baseline;
+		    margin-top: 20px;
+		}
+
+		
+		#sidebar {
+			float: none;
+		    height: auto;
+		    width: auto;
+		}
+
+		h1 {
+			width: 86.7%;
+    		padding: 0 0 0 20px;
+    		margin: 0;
+		}
+
+		.circles {
+			padding: 25px 0 15px 15px;
+		    border: 2px solid #e8e6e7;
+		    height: auto;
+		    width: 87vw;
+		}
+
+		#content {
+			width: 93vw;
+			}
+
+		h2 {
+			margin-top: 30px;
+		}
+	}	
+
+	@media (min-width: 480px) and (max-width: 1050px) {
+		.right {
+			height: 400px;
+			top: 0;
+   			flex-wrap: nowrap;
+   			justify-content: flex-end;
+		}
+
+		.contacts {
+			flex-direction: column;
+    		width: 30%;
+    		justify-content: flex-start;
+		}
+
+		.info {
+			flex-direction: column;
+		    top: 60px;
+		    height: 500px;
+		}
+
+		.left {
+		
+		    height: 150px;
+		    top: 0;
+		    text-align: center;
+    		width: 90vw;
+		}
+
+		.left p {
+			text-align: center;
+		}
+
+		.right {
+			flex-wrap: nowrap;
+    		justify-content: center;
+    		width: 100vw;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1000px) {
+
+		.layout-main {
+			width: 100vw;
+		}
+
+		#sidebar {
+			width: 40%;
+		}
+
+		#content {
+			width: 50%;
+		}
+	}
